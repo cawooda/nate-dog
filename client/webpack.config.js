@@ -13,6 +13,8 @@ module.exports = () => {
       main: "./src/js/index.js",
       install: "./src/js/install.js",
     },
+    devtool: "inline-source-map",
+    devServer: { static: "./dist" },
     output: {
       filename: "[name].bundle.js",
       path: path.resolve(__dirname, "dist"),
